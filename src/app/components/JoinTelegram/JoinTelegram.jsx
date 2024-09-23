@@ -1,8 +1,8 @@
 import './JoinTelegram.css';
 
-export default function JoinTelegram (){
+export default function JoinTelegram() {
     return (
-        <div>
+        <div className="telegram-container">
             <a 
                 href="https://t.me/+GdJZU7dPNGYwMmMx" 
                 target="_blank" 
@@ -11,5 +11,5 @@ export default function JoinTelegram (){
                 Join Telegram
             </a>
         </div>
-    )
+    );
 }

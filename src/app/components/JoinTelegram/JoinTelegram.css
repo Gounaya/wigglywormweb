@@ -1,19 +1,30 @@
+.telegram-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
 .button {
-    border: .25rem solid var(--body--text-color);
+    border: 0.25rem solid var(--body--text-color);
     background-color: var(--translucent--transparent);
     color: var(--body--text-color);
     border-radius: 1.125rem;
-    justify-content: flex-start;
-    align-items: center;
-    padding: .625rem 1.125rem .5rem;
+    padding: 0.625rem 1.125rem 0.5rem;
     font-size: 1.625rem;
     font-weight: 700;
-    line-height: 1;
     text-decoration: none;
-    transition: box-shadow .3s, transform .3s;
+    transition: box-shadow 0.3s, transform 0.3s;
     display: inline-flex;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
-    margin: 0 1rem; /* Add margin to both sides */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0 1rem;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
 }
 
 .w-button {

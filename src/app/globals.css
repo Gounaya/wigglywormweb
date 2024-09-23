@@ -39,3 +39,34 @@ h2 {
   padding-right: 150px ; /* Ajustez la valeur selon vos besoins */
 
 }
+
+
+
+
+
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.wiggly-logo {
+  animation: wiggle 1s infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
+
+
+.wigglywormlogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2z0px; /* Adjust padding as needed */
+}

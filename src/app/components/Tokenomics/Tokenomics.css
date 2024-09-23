@@ -1,16 +1,20 @@
+.center-text {
+    text-align: center; /* Centers the text horizontally */
+}
 
 .container-tokenomics {
     display: flex;
     justify-content: center; /* Centers horizontally */
-
 }
 
 .grid-badges {
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 1.5rem;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
     grid-template-rows: auto;
     grid-auto-columns: 1fr;
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1500px, 1fr)); /* Adjust the minmax values as needed */
+
 }
 
 .badge {

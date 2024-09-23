@@ -1,17 +1,32 @@
-
 import Image from 'next/image';
-import Tokenomics from './components/Tokenomics/Tokenomics';
-import JoinTelegram from './components/JoinTelegram/JoinTelegram';
+import Head from 'next/head';
 import wigglywormlogo from './assets/wigglywormAI.png';
-import BigTitle from './components/BigTitle/BigTitle';
-import Linker from './components/Linker/Linker';
+import wormlogo from './assets/worm.png';
+import { Tokenomics, JoinTelegram, BigTitle, Footer } from './components';
+
+export const metadata = {
+  title: "$WGLY | Wiggly Worm",
+  description: "$WGLY | Wiggly Worm | Solana MEME Coin",
+};
 
 export default function Home() {
   return (
     <div>
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <link rel="icon" href="./assets/wigglywormAI.png" />
+      </Head>
       <header>
         <div className='header-container'>
-          <h1 className='logo'>Wiggly Worm</h1>
+          <Image
+            src={wormlogo}
+            alt="wiggly worm logo"
+            width={130}
+            height={50}
+            className='wiggly-logo logo'
+          />
+          {/* <h1 className='logo'>Wiggly Worm</h1> */}
           <JoinTelegram />
         </div>
       </header>
@@ -28,7 +43,7 @@ export default function Home() {
               The latest sensation in the world of meme coins on the SOLANA blockchain
             </h1>
           </div>
-          <div className="">
+          <div className="wigglywormlogo">
             <Image
               src={wigglywormlogo}
               alt="wiggly worm logo"
@@ -42,7 +57,7 @@ export default function Home() {
       </main>
       <footer >
         <div>
-          <Linker />
+          <Footer />
         </div>
       </footer>
     </div>
