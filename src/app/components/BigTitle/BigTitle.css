@@ -1,0 +1,25 @@
+.big-title {
+    font-weight: bold;
+    background: linear-gradient(90deg, magenta, cyan);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* position: relative; */
+    margin-bottom: 0px;
+    width: max-content;
+    filter: drop-shadow(3px 0 0 rgb(0, 0, 0)) 
+    drop-shadow(0 3px 0 rgb(0, 0, 0))
+    drop-shadow(-3px 0 0 rgb(0, 0, 0)) 
+    drop-shadow(0 -3px 0 rgb(0, 0, 0));
+  
+    font-weight: bold;
+}   
+  
+.big-title::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 20px; /* Ajustez la valeur pour correspondre au padding */
+    z-index: -1;
+    color: rgba(0, 0, 0, 0.2); /* Ajustez la couleur et l'opacité de l'ombre */
+    transform: translate(5px, 5px); /* Ajustez la position de l'ombre */
+}
+  

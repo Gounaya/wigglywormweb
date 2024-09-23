@@ -1,27 +1,41 @@
-@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.background {
+  background-color: rgb(250, 245, 223);
+}
+
+.bigTitle {
+  font-size: "40px",
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem; /* Adjust padding as needed */
+}
+
+.logo {
+  font-size: 3rem; /* Adjust font size as needed */
+  margin: 0 1rem; /* Add margin to both sides */
+
+}
+
+.margins {
+  padding-left: 150px ; /* Ajustez la valeur selon vos besoins */
+  padding-right: 150px ; /* Ajustez la valeur selon vos besoins */
+
 }

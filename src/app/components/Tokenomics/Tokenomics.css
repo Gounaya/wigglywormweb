@@ -1,0 +1,34 @@
+
+.container-tokenomics {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+
+}
+
+.grid-badges {
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+    grid-template-rows: auto;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+
+.badge {
+    color: var(--neutral--black);
+    border: .1875rem solid #502d02;
+    border-radius: .75rem;
+    justify-content: space-around;
+    align-items: center;
+    padding: .75rem 2.5rem .5rem;
+    font-size: 1.875rem;
+    display: flex;
+    margin: 1rem; /* Add this line to create space between badges */
+}
+
+.container-grid-badges {
+    box-sizing: border-box;
+}
+
+.margin-bottom.is-large {
+    margin-bottom: 1.5rem;
+}
